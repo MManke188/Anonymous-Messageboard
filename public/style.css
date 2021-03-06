@@ -5,6 +5,105 @@
 
 body {
   padding: 10px;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Rajdhani';
+}
+
+#submitNewThread {
+  margin: 50px;
+}
+
+/* Homepage: */
+
+#boardTitle {
+  color: rgb(35, 75, 225);
+}
+
+header {
+  align-self: center;
+  padding-top: 30px;
+}
+
+#testui {
+  margin: 50px;
+  align-self: center;
+  border: 1px solid black;
+  width: 600px;
+  height: 600px;
+  padding: 20px;
+  background-color: rgb(200, 208, 255);
+}
+
+#board1 {
+  width: 30%;
+  font-size: larger;
+  font-family: 'Rajdhani';
+  margin: 10px;
+}
+
+#navigation {
+  position: fixed;
+  top: 30px;
+  right: 70px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  font-size: 20px;
+  background-color: rgb(100, 228, 255);
+}
+
+#input {
+  font-size: 16px;
+  font-family: 'Rajdhani';
+}
+
+#textarea {
+  width: 90%;
+  height: 300px;
+  font-size: 20px;
+  font-family: 'Rajdhani';
+  margin: 10px;
+  padding: 5px;
+}
+
+textarea {
+  resize: none;
+}
+
+#password {
+  font-family: 'Rajdhani';
+  margin: 10px;
+  margin-bottom: 3px;
+  width: 140px;
+  height: 20px;
+  font-size: 17px;
+}
+
+#submit {
+  font-family: 'Rajdhani';
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+/* End of Homepage */
+
+/* Thread: */
+
+#threadTitle {
+  font-family: 'Rajdhani';
+}
+
+#boardDisplay {
+  margin: 15px;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: rgb(200, 208, 255);
 }
 
 .replies {
@@ -21,16 +120,19 @@ body {
   margin: 10px 5px 10px 5px;
 }
 
-.thread {
-  border: 2px solid black;
-  padding: 5px;
-  margin-bottom: 5px;
-}
-
 .id {
   font-size: 10.5px;
+  width: fit-content;
 }
 
-#submitNewThread {
-  margin: 50px;
+#reportThread {
+  width: fit-content;
+  font-family: 'Rajdhani';
 }
+
+#deleteThread {
+  width: fit-content;
+  font-family: 'Rajdhani';
+}
+
+/* End of Thread */
