@@ -3,6 +3,17 @@
   padding: 0px;
 }
 
+input {
+  font-family: 'Rajdhani'
+}
+
+textarea {
+  font-family: 'Rajdhani';
+  resize: none;
+  padding: 5px;
+  background-color: whitesmoke;
+}
+
 body {
   padding: 10px;
   background-color: aliceblue;
@@ -41,6 +52,7 @@ header {
   font-size: larger;
   font-family: 'Rajdhani';
   margin: 10px;
+  padding: 5px;
 }
 
 #navigation {
@@ -67,16 +79,12 @@ header {
   font-size: 20px;
   font-family: 'Rajdhani';
   margin: 10px;
-  padding: 5px;
 }
 
-textarea {
-  resize: none;
-}
-
-#password {
+.password {
   font-family: 'Rajdhani';
   margin: 10px;
+  text-align: center;
   margin-bottom: 3px;
   width: 140px;
   height: 20px;
@@ -91,19 +99,65 @@ textarea {
 
 /* End of Homepage */
 
+/* Board: */
+
+
+/* End of board */
+
 /* Thread: */
 
-#threadTitle {
-  font-family: 'Rajdhani';
-}
-
-#boardDisplay {
+.thread {
   margin: 15px;
   border: 2px solid black;
   border-radius: 15px;
   padding: 10px;
   margin-bottom: 5px;
   background-color: rgb(200, 208, 255);
+  box-shadow: 3px 5px 3px rgba(0, 0, 255, 0.4);
+}
+
+.main {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.reply {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.extras {
+  display: grid;
+  width: fit-content;
+}
+
+.text {
+  width: 90%;
+  margin: 10px 10px 20px 10px;
+}
+
+.id {
+  font-size: 10.5px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.date {
+  font-size: 10.5px;
+}
+
+#reportThread {
+  height: fit-content;
+}
+
+#deleteThread {
+  height: fit-content;
+}
+
+#threadTitle {
+  font-family: 'Rajdhani';
 }
 
 .replies {
@@ -117,22 +171,19 @@ textarea {
 }
 
 .newReply {
-  margin: 10px 5px 10px 5px;
+  margin: 20px 5px 5px 5px;
 }
 
-.id {
-  font-size: 10.5px;
-  width: fit-content;
+.password {
+  margin-right: 5px;
+  background-color: whitesmoke;
+  border: 1px solid grey;
 }
 
-#reportThread {
-  width: fit-content;
-  font-family: 'Rajdhani';
-}
-
-#deleteThread {
-  width: fit-content;
-  font-family: 'Rajdhani';
+.submitBtn {
+  font-size: 17px;
+  font-weight: 700;
+  color: royalblue;
 }
 
 /* End of Thread */
