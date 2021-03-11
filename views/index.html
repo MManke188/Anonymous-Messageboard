@@ -24,7 +24,10 @@
 
   <div id="navigation">
     <h4>Visit a specific board:</h4>
-    <input placeholder="board name" id='input'></input>
+    <form action="/b/test" method="get" id="getThread">
+      <input placeholder="board name" id='input'></input>
+      <input type="submit" id="submit" value="Go">
+    </form>
   </div>
 
   <div id='testui' style='margin-left: 5%'>
@@ -52,6 +55,11 @@
       $('#newThread').submit(function () {
         var board = $('#board1').val();
         $(this).attr('action', "/api/threads/" + board);
+      });
+      
+      $('#getThread').submit(function () {
+        var board = $('#input').val();
+        $(this).attr('action', "/b/" + board + "/");
       });
     });
   </script>
