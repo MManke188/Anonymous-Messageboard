@@ -26,7 +26,7 @@
     <h4>Visit a specific board:</h4>
     <form action="/b/test" method="get" id="getThread">
       <input placeholder="board name" id='input'></input>
-      <input type="submit" id="submit" value="Go">
+      <input type="submit" id="submit" value="Go" style="visibility: hidden;">
     </form>
   </div>
 
@@ -38,7 +38,7 @@
         <input type='text' placeholder='board' id='board1' name='board' required=''><br>
         <textarea type='text' id='textarea' placeholder='Thread text...' name='text' required=''></textarea><br>
         <input type='text' class="password" placeholder='password' name='delete_password' required=''><br>
-        <input type="submit" id="submit" value="Submit">
+        <input type="submit" id="submit" value="Submit" class='submitBtn'>
       </form>
     </div>
 

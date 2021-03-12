@@ -9,6 +9,7 @@ input {
 
 textarea {
   font-family: 'Rajdhani';
+  font-size: large;
   resize: none;
   padding: 5px;
   background-color: whitesmoke;
@@ -23,14 +24,12 @@ body {
 }
 
 #submitNewThread {
+  font-size: large;
+  color:rgb(0, 101, 255);
   margin: 50px;
 }
 
 /* Homepage: */
-
-#boardTitle {
-  color: rgb(35, 75, 225);
-}
 
 header {
   align-self: center;
@@ -57,20 +56,33 @@ header {
 
 #navigation {
   position: fixed;
-  top: 30px;
-  right: 70px;
+  top: 20px;
+  right: 30px;
   border: 1px solid black;
   border-radius: 10px;
   width: fit-content;
   height: fit-content;
-  padding: 5px;
+  padding: 6px;
   font-size: 20px;
-  background-color: rgb(100, 228, 255);
+  background-color: lightgray;
+  text-align: center;
+  box-shadow: 3px 3px 3px rgba(139,0,0,0.4);
+}
+
+#home {
+  color: black;
+  font-weight: bold;
 }
 
 #input {
-  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: -15px;
+  font-size: 20px;
   font-family: 'Rajdhani';
+  position: relative;
+  width: 100%;
+  right: 3px;
+  text-align: center;
 }
 
 #textarea {
@@ -101,6 +113,9 @@ header {
 
 /* Board: */
 
+#boardTitle {
+  color: rgb(35, 75, 225);
+}
 
 /* End of board */
 
@@ -136,6 +151,7 @@ header {
 .text {
   width: 90%;
   margin: 10px 10px 20px 10px;
+  font-size: x-large;
 }
 
 .id {

@@ -23,8 +23,9 @@
     <h4>Visit a specific board:</h4>
     <form action="/b/test" method="get" id="getThread">
       <input placeholder="board name" id='input'></input>
-      <input type="submit" id="submit" value="Go">
+      <input type="submit" id="submit" value="Go"  style="visibility: hidden;">
     </form>
+    <a href="/" id='home'>Homepage</a>
   </div>
 
   <div id='submitNewThread'>
@@ -32,7 +33,7 @@
     <form id="newThread" method="post" action="/api/">
       <textarea rows="8" cols="120" type='text' placeholder='Thread text...' name='text' required=''></textarea><br>
       <input type='text' placeholder='password to delete' name='delete_password' required=''><br>
-      <input type="submit" value="Submit">
+      <input type="submit" value="Submit" class='submitBtn'>
     </form>
   </div>
 
@@ -65,7 +66,7 @@
             thread.push('<p class="id">id: ' + ele._id + '</p>');
             thread.push('<p class="date">' + ele.created_on + '</p>');
             thread.push('<form id="reportThread"><input type="hidden" name="report_id" value="' + ele._id + '"><input type="submit" value="Report"></form>');
-            thread.push('<form id="deleteThread" ><input type="hidden" value="' + ele._id + '" name="thread_id" required=""><input type="text" placeholder="password" name="delete_password" required="" class="deletePassword"><input type="submit" value="Delete"></form>');
+            thread.push('<form id="deleteThread"><input type="hidden" value="' + ele._id + '" name="thread_id" required=""><input type="text" placeholder="password" name="delete_password" required="" class="deletePassword"><input type="submit" value="Delete"></form>');
             thread.push('</div>')
             thread.push('<h3 class="text">' + ele.text + '</h3>');
             thread.push('</div><div class="replies">');
