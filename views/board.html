@@ -23,7 +23,7 @@
     <h4>Visit a specific board:</h4>
     <form action="/b/test" method="get" id="getThread">
       <input placeholder="board name" id='input'></input>
-      <input type="submit" id="submit" value="Go"  style="visibility: hidden;">
+      <input type="submit" id="submit" value="Go" style="visibility: hidden;">
     </form>
     <a href="/" id='home'>Homepage</a>
   </div>
@@ -52,7 +52,9 @@
         type: "GET",
         url: url,
         success: function (data) {
-          $('#boardTitle').text('Welcome to ' + data[0].board)
+          let title = data[0].board
+          title = title.slice(3,).replace('%', ' ').replace('/', '')
+          $('#boardTitle').text('Welcome to ' + title)
           var boardThreads = [];
           //
           // THIS ARRAY SET UP IS FOR CODE READABILITIES AND TESTING!
@@ -77,7 +79,7 @@
               thread.push('<div class="reply">')
               thread.push('<div class="extras">')
               thread.push('<p class="id">id: ' + rep._id + '</p>');
-              thread.push('<p class="date">' + rep.created_on +'</p>')
+              thread.push('<p class="date">' + rep.created_on + '</p>')
               thread.push('<form id="reportReply" ><input type="hidden" name="thread_id" value="' + ele._id + '"><input type="hidden" name="reply_id" value="' + rep._id + '"><input type="submit" value="Report"></form>');
               thread.push('<form id="deleteReply" ><input type="hidden" value="' + ele._id + '" name="thread_id" required=""><input type="hidden" value="' + rep._id + '" name="reply_id" required=""><input type="text" placeholder="password" name="delete_password" required="" class="deletePassword"><input type="submit" value="Delete" class="subBtn"></form>');
               thread.push('</div>')
