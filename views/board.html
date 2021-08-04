@@ -47,14 +47,14 @@
     $(function () {
       var currentBoard = window.location.pathname.slice(3, -1);
       var url = "/api/threads/" + currentBoard;
-      $('#boardTitle').text('Welcome to ' + window.location.pathname)
+      let title = window.location.pathname
+      title = title.slice(3,).replace('%20', ' ').replace('/', '')
+      $('#boardTitle').text('Welcome to ' + title)
       $.ajax({
         type: "GET",
         url: url,
         success: function (data) {
-          let title = data[0].board
-          title = title.slice(3,).replace('%', ' ').replace('/', '')
-          $('#boardTitle').text('Welcome to ' + title)
+          $('#boardTitle').text('Welcome to ' + data[0].board)
           var boardThreads = [];
           //
           // THIS ARRAY SET UP IS FOR CODE READABILITIES AND TESTING!
