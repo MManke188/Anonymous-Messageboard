@@ -20,13 +20,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //Information security
 const helmet = require('helmet')
 
-//app.use(helmet.frameguard({action: 'sameorigin'}))
+app.use(helmet.frameguard({action: 'sameorigin'}))
 
 app.use(helmet.dnsPrefetchControl())
 
-/*app.use(helmet.referrerPolicy({
+app.use(helmet.referrerPolicy({
   policy: ['same-origin']
-}))*/
+}))
 
 
 //Sample front-end
