@@ -5,6 +5,7 @@
 
 body {
   padding: 10px;
+  background-color: aliceblue;
 }
 
 .replies {
@@ -33,4 +34,8 @@ body {
 
 #submitNewThread {
   margin: 50px;
+}
+
+#boardTitle {
+  color: rgb(35, 75, 225);
 }
