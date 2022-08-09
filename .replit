@@ -1,2 +1,4 @@
+
+const mySecret = process.env['DB']
 language = "nodejs"
 run = "npm start"
