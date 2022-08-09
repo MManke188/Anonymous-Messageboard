@@ -3,177 +3,9 @@
   padding: 0px;
 }
 
-input {
-  font-family: 'Rajdhani'
-}
-
-textarea {
-  font-family: 'Rajdhani';
-  font-size: large;
-  resize: none;
-  padding: 5px;
-  background-color: whitesmoke;
-}
-
 body {
   padding: 10px;
   background-color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Rajdhani';
-}
-
-#submitNewThread {
-  font-size: large;
-  color: rgb(0, 101, 255);
-  margin: 50px;
-}
-
-/* Homepage: */
-
-header {
-  align-self: center;
-  padding-top: 30px;
-}
-
-#testui {
-  margin: 50px;
-  align-self: center;
-  border: 1px solid black;
-  width: 600px;
-  height: 600px;
-  padding: 20px;
-  background-color: rgb(200, 208, 255);
-}
-
-#board1 {
-  width: 30%;
-  font-size: larger;
-  font-family: 'Rajdhani';
-  margin: 10px;
-  padding: 5px;
-}
-
-#navigation {
-  position: fixed;
-  top: 20px;
-  right: 30px;
-  border: 1px solid black;
-  border-radius: 10px;
-  width: fit-content;
-  height: fit-content;
-  padding: 6px;
-  font-size: 20px;
-  background-color: lightgray;
-  text-align: center;
-  box-shadow: 3px 3px 3px rgba(139, 0, 0, 0.4);
-}
-
-#home {
-  color: black;
-  font-weight: bold;
-}
-
-#input {
-  margin-top: 5px;
-  margin-bottom: -15px;
-  font-size: 20px;
-  font-family: 'Rajdhani';
-  position: relative;
-  width: 100%;
-  right: 3px;
-  text-align: center;
-}
-
-#textarea {
-  width: 90%;
-  height: 300px;
-  font-size: 20px;
-  font-family: 'Rajdhani';
-  margin: 10px;
-}
-
-.password {
-  font-family: 'Rajdhani';
-  margin: 10px;
-  text-align: center;
-  margin-bottom: 3px;
-  width: 140px;
-  height: 20px;
-  font-size: 17px;
-}
-
-#submit {
-  font-family: 'Rajdhani';
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
-
-/* End of Homepage */
-
-/* Board: */
-
-#boardTitle {
-  color: rgb(35, 75, 225);
-}
-
-/* End of board */
-
-/* Thread: */
-
-.thread {
-  margin: 15px;
-  border: 2px solid black;
-  border-radius: 15px;
-  padding: 10px;
-  margin-bottom: 5px;
-  background-color: rgb(200, 208, 255);
-  box-shadow: 3px 5px 3px rgba(0, 0, 255, 0.4);
-}
-
-.main {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-}
-
-.reply {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-}
-
-.extras {
-  display: grid;
-  width: fit-content;
-}
-
-.text {
-  width: 90%;
-  margin: 10px 10px 20px 10px;
-  font-size: x-large;
-}
-
-.id {
-  font-size: 10.5px;
-  height: fit-content;
-  width: fit-content;
-}
-
-.date {
-  font-size: 10.5px;
-}
-
-#reportThread {
-  height: fit-content;
-}
-
-#deleteThread {
-  height: fit-content;
-}
-
-#threadTitle {
-  font-family: 'Rajdhani';
 }
 
 .replies {
@@ -187,124 +19,23 @@ header {
 }
 
 .newReply {
-  margin: 20px 5px 5px 5px;
+  margin: 10px 5px 10px 5px;
 }
 
-.password {
-  margin-right: 5px;
-  background-color: whitesmoke;
-  border: 1px solid grey;
+.thread {
+  border: 2px solid black;
+  padding: 5px;
+  margin-bottom: 5px;
 }
 
-.submitBtn {
-  font-size: 17px;
-  font-weight: 700;
-  color: royalblue;
+.id {
+  font-size: 10.5px;
 }
 
-/* End of Thread */
-
-@media (max-width: 6000px) {
-  body {
-    transform: scale(3);
-    transform-origin: top left;
-  }
+#submitNewThread {
+  margin: 50px;
 }
 
-@media (max-width: 5000px) {
-  body {
-    transform: scale(2.5);
-    transform-origin: top left;
-  }
-}
-
-@media (max-width: 4000px) {
-  body {
-    transform: scale(2);
-    transform-origin: top left;
-  }
-}
-
-@media (max-width: 3000px) {
-  body {
-    transform: scale(1.8);
-    transform-origin: top left;
-  }
-}
-
-@media (max-width: 2300px) {
-  body {
-    transform: scale(1.6);
-    transform-origin: top left;
-  }
-}
-
-@media (max-width: 2000px) {
-  body {
-    transform: scale(1.4);
-    transform-origin: top left;
-  }
-}
-
-@media (max-width: 1840px) {
-  body {
-    transform: scale(1.2);
-    transform-origin: top left;
-  }
-}
-
-@media (max-width: 1440px) {
-  body {
-    transform: scale(1);
-    transform-origin: top left;
-  }
-}
-
-@media (max-width: 1152px) {
-  body {
-    transform: scale(0.8);
-    transform-origin: top left;
-  }
-}
-
-@media (max-width: 864px) {
-  body {
-    transform: scale(0.7);
-    transform-origin: top left;
-  }
-}
-
-@media (max-width: 715px) {
-  body {
-    transform: scale(0.6);
-    transform-origin: top left;
-  }
-}
-
-@media (max-width: 615px) {
-  body {
-    transform: scale(0.5);
-    transform-origin: top left;
-  }
-}
-
-@media (max-width: 515px) {
-  body {
-    transform: scale(0.4);
-    transform-origin: top left;
-  }
-}
-
-@media (max-width: 415px) {
-  body {
-    transform: scale(0.3);
-    transform-origin: top left;
-  }
-}
-
-@media (max-width: 315px) {
-  body {
-    transform: scale(0.2);
-    transform-origin: top left;
-  }
+#boardTitle {
+  color: rgb(35, 75, 225);
 }
